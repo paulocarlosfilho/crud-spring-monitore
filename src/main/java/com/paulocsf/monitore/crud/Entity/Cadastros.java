@@ -9,7 +9,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="cadastros")
-public class cadastros {
+public class Cadastros {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator ="seq_cadastro")
@@ -30,17 +30,17 @@ public class cadastros {
     @Column(name="celular")
     private String celular;
 
-    @Column(name="e-mail")
+    @Column(name="email")
     private String email;;
 
     @Column(name="senha")
     private String senha;
 
-    public cadastros(){
+    public Cadastros(){
 
     }
 
-    public cadastros(String name, String endereco, String cep, String cpf, String celular, String email,
+    public Cadastros(String name, String endereco, String cep, String cpf, String celular, String email,
             String senha) {
         this.name = name;
         this.endereco = endereco;
